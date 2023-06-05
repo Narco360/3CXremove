@@ -9,12 +9,10 @@ if (Get-Process -Name "3CXDesktopApp" -ErrorAction SilentlyContinue) {
     Stop-Process -Name "3CXDesktopApp" -Force
 }
 
-$name = "yannick.garcia"
-
 $ListOfLocations = @(
-    "C:\Users\$name\AppData\Local\Programs\3CXDesktopApp",
-    "C:\Program Files\3CXDesktopApp"
+    "C:\Program Files\3CXDesktopApp",
     "C:Programmes\3CXDesktopApp"
+    "Programmes (x86)\3CXDesktopApp"
     )
  
 foreach ($Location in $ListOfLocations){
