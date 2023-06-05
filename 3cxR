@@ -11,8 +11,13 @@ if (Get-Process -Name "3CXDesktopApp" -ErrorAction SilentlyContinue) {
 
 $ListOfLocations = @(
     "C:\Program Files\3CXDesktopApp",
-    "C:Programmes\3CXDesktopApp"
-    "Programmes (x86)\3CXDesktopApp"
+    "C:\Programmes\3CXDesktopApp",
+    "C:\Programmes (x86)\3CXDesktopApp",
+    "C:\Program Files (x86)\3CXDesktopApp",
+    "C:\Program Files\3CX Desktop App",
+    "C:\Programmes\3CX Desktop App",
+    "C:\Programmes (x86)\3CX Desktop App",
+    "C:\Program Files (x86)\3CX Desktop App"    <# #added some new locations and corrected the missing C: from the previous one #>
     )
  
 foreach ($Location in $ListOfLocations){
