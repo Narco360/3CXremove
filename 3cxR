@@ -1,11 +1,11 @@
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser -force
 Write-Host "Script execution started."
 
-Set-variable -Name "PCname"  -Value  "$([Environment]::MachineName)"  <#lis le nom pc#> 
-Get-variable -Name "PCname"    <#affiche le nom pc#>    
+Set-variable -Name "PCname"  -Value  "$([Environment]::MachineName)"  <#read pc name#> 
+Get-variable -Name "PCname"    <#show pc name#>    
 
 if (Get-Process -Name "3CXDesktopApp" -ErrorAction SilentlyContinue) {
-    write-host "L'application est en cours d'utilisation, arrêt immédiat !"
+    write-host "The app is running, killing it !"
     Stop-Process -Name "3CXDesktopApp" -Force
 }
 
