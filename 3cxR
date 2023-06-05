@@ -1,0 +1,28 @@
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
+Write-Host "Script execution started."
+
+Set-variable -Name "PCname"  -Value  "$([Environment]::MachineName)"  <#lis le nom pc#> 
+Get-variable -Name "PCname"    <#affiche le nom pc#>    
+
+if (Get-Process -Name "3CXDesktopApp" -ErrorAction SilentlyContinue) {
+    write-host "L'application est en cours d'utilisation, arrêt immédiat !"
+    Stop-Process -Name "3CXDesktopApp" -Force
+}
+
+$name = "yannick.garcia"
+
+$ListOfLocations = @(
+    "C:\Users\$name\AppData\Local\Programs\3CXDesktopApp",
+    "C:\Program Files\3CXDesktopApp"
+    )
+ 
+foreach ($Location in $ListOfLocations){
+ 
+    $FoundInstances = Get-Item -Path $Location -ErrorAction SilentlyContinue
+ 
+    foreach ($FoundInstance in $FoundInstances){
+        write-host "Found 3CX Desktop folders at '$FoundInstance', Deleting folders..."
+        Remove-Item -Path $FoundInstance -Recurse
+    }
+}
+pause
