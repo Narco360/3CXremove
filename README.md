@@ -1,4 +1,4 @@
 # 3CXremove
-The project is a simple script that i want to put in Intune (microsoft Intune) to delete all 3cx app from the computers connected to the Intune.
-
-Right now its removing the files from different locations, im updating the code and working on it if you got any suggestion i'll gladly hear them !
+This is a powershell project to remove the 3CXDesktopApp related to the CVE-2023-29059 ("3CX DesktopApp through 18.12.416 has embedded malicious code, as exploited in the wild in March 2023. This affects versions 18.12.407 and 18.12.416 of the 3CX DesktopApp Electron Windows application shipped in Update 7, and versions 18.11.1213, 18.12.402, 18.12.407, and 18.12.416 of the 3CX DesktopApp Electron macOS application.")
+So Im making a script to remove it and all its folders...
+** 06/06/2023 ** : the script is working under admin powershell still not with windows Intune /working on it/
