@@ -12,4 +12,4 @@ So Im making a script to remove it and all its folders...
 
 ## Script
 
-[Uninstall&RemoveFiles3cx](script)
+[Script](Uninstall&RemoveFiles3cx)
