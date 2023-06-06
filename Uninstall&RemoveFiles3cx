@@ -20,6 +20,15 @@ if ($Programs) {
     Write-Host "The '3CXDesktopApp' application is not installed."
 }
 
+$Prog = Get-Process -Name "3CXDesktopApp" -ErrorAction SilentlyContinue
+if ($Prog) {
+    Write-Host "Found the '3CXDesktopApp' application. Uninstalling..."
+    $Prog.Uninstall
+    Write-Host "Uninstallation completed."
+} else {
+    Write-Host "The '3CXDesktopApp' application is not installed."
+}
+
 $ListOfLocations = @(
     "C:\Program Files\3CXDesktopApp",
     "C:\Programmes\3CXDesktopApp",
@@ -28,7 +37,8 @@ $ListOfLocations = @(
     "C:\Program Files\3CX Desktop App",
     "C:\Programmes\3CX Desktop App",
     "C:\Programmes (x86)\3CX Desktop App",
-    "C:\Program Files (x86)\3CX Desktop App"    
+    "C:\Program Files (x86)\3CX Desktop App",
+    "C:\Users\*\AppData\Local\Programs\3CXDesktopApp"    
     )
  
 foreach ($Location in $ListOfLocations) {
