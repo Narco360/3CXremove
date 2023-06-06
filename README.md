@@ -9,3 +9,7 @@ So Im making a script to remove it and all its folders...
 ## UPDATES
 
 * ** 06/06/2023 ** : the script is working under admin powershell still not with windows Intune /working on it/
+
+## Script
+
+[Uninstall&RemoveFiles3cx](script)
