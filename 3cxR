@@ -20,13 +20,14 @@ $ListOfLocations = @(
     "C:\Program Files (x86)\3CX Desktop App"    <# #added some new locations and corrected the missing C: from the previous one #>
     )
  
-foreach ($Location in $ListOfLocations){
- 
-    $FoundInstances = Get-Item -Path $Location -ErrorAction SilentlyContinue
- 
-    foreach ($FoundInstance in $FoundInstances){
-        write-host "Found 3CX Desktop folders at '$FoundInstance', Deleting folders..."
-        Remove-Item -Path $FoundInstance -Recurse
+foreach ($Location in $ListOfLocations) {
+    if (Test-Path $Location) {
+        Write-Host "Found 3CX Desktop App at '$Location', deleting folder..."
+        Remove-Item -Path $Location -Recurse -Force
+        Write-Host "Successfully removed 3CX Desktop App at '$Location'"
+    } else {
+        Write-Host "3CX Desktop App not found at '$Location'"
     }
 }
-pause
+
+#pause
