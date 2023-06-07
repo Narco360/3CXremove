@@ -8,7 +8,7 @@ So Im making a script to remove it and all its folders...
 
 ## UPDATES
 
-* [** 06/06/2023 **](Updates/06\06\2023) 
+* [** 06/06/2023 **](Updates/06\06\2023.md) 
 * [** 07/06/2023 **](Updates/07\06\2023.md) 
 
 ## Script
