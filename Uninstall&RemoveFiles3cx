@@ -38,7 +38,8 @@ $ListOfLocations = @(
     "C:\Programmes\3CX Desktop App",
     "C:\Programmes (x86)\3CX Desktop App",
     "C:\Program Files (x86)\3CX Desktop App",
-    "C:\Users\*\AppData\Local\Programs\3CXDesktopApp"    
+    "C:\Users\*\AppData\Local\Programs\3CXDesktopApp",
+    "C:\Users\*\AppData\Roaming\3CXDesktopApp"
     )
  
 foreach ($Location in $ListOfLocations) {
