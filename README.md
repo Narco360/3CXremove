@@ -8,7 +8,7 @@ So Im making a script to remove it and all its folders...
 
 ## UPDATES
 
-* ** 06/06/2023 ** : the script is working under admin powershell still not with windows Intune /working on it/
-* ** 07/06/2023 ** : The files have been deleted through Intune. The script is returning an error, but that's only because it's unable to uninstall the application. However, the file deletion functionality is working correctly. Additionally, a new path has been added.
+* [** 06/06/2023 **](Updates/06\06\2023) 
+* [** 07/06/2023 **](Updates/07\06\2023) 
 
 ## [Script](Uninstall&RemoveFiles3cx)
