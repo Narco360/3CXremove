@@ -11,4 +11,7 @@ So Im making a script to remove it and all its folders...
 * [** 06/06/2023 **](Updates/06\06\2023) 
 * [** 07/06/2023 **](Updates/07\06\2023.md) 
 
-## [Script](Script.ps1)
+## Script
+
+* [version 1.0](Updates/code/07\06\2023/v1.0.ps1)
+* [version 1.01](Updates/code/07\06\2023/v1.01.ps1)
